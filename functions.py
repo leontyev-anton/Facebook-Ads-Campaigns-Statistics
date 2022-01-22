@@ -1,8 +1,8 @@
+import pandas as pd
+import sqlalchemy
 from google.cloud import bigquery
 from google.oauth2 import service_account
-import sqlalchemy
 from sqlalchemy import create_engine
-import pandas as pd
 
 
 def write_to_snowflake(data, sn_table, sn_user, sn_password, sn_account, sn_database, sn_schema, sn_warehouse, sn_role_name, log_text=None, log_error=None):
