@@ -1,8 +1,10 @@
-import requests
 import os
 from datetime import datetime, timedelta
-from facebook_config import g_file, g_project, g_table_name, fb_token, fb_host, fb_account, g_logs_table_name
+
+import requests
+from facebook_config import fb_token, fb_host, fb_account
 from facebook_config import sn_user, sn_password, sn_account, sn_database, sn_table, sn_schema, sn_warehouse, sn_role_name
+from functions import write_to_snowflake, log
 
 # g_file - file with JSON key from BigQuery authorization
 # g_project - BigQuery project name
